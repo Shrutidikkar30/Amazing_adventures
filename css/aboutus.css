@@ -1,0 +1,255 @@
+:root {
+	--red: #ff3838;
+	--white: #ffffff;
+	--black: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+*{
+	margin:0; 
+	padding:0;
+	box-sizing: border-box;
+	transition:all .2s linear;
+  }
+    
+body, html {
+	font-family: Georgia;
+	margin: 0;
+	height: 100%;
+}
+.heading1
+{
+	font-size: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.heading
+{
+	font-size: 50px;
+	text-align: center;
+	padding: 50px;
+}
+.border{
+	width: 160px;
+	height: 5px;
+	background: orange;
+	margin:-40px auto;
+	margin-bottom:20px;
+  }
+
+.about{
+	margin-top: 100px;
+	min-height: 100vh;
+	padding-bottom: 3rem;
+  }
+  .about .row
+  {
+	  margin-top: -40px;
+  }
+  .about .image{
+	padding:2rem;
+  }
+  
+  .about .image img{
+	width: 100%;
+	height:30rem;
+	object-fit: cover;
+  }
+  
+  .about .info{
+  	background-color:#D4F1F4;
+	padding:2rem;
+	margin-top: 3rem;
+  }
+  
+  .about .info h3{
+	color:black;
+	font-size: 23px;
+  }
+  
+  .about .info p{
+	font-size: 18px;
+	color:#444;
+	margin:1rem 0;
+  }
+   .about .info .button
+  {
+	  font-size: 22px;
+	  text-decoration: none;
+	  display: inline-block;
+	  padding: 12px 35px;
+	  background-color: orange;
+	  border-radius: 1000px;
+	  color: #fff;
+	  border:1px solid orange;
+	  letter-spacing: 1.5px;
+	  margin-top:10px;
+  }
+  .about .info .button:hover
+  {
+	  background-color: #fff;
+	  color: orange;
+	  transition: 0.2s ease;
+	  text-decoration: none;
+  }
+  
+  
+  .team-area {
+	padding: 20px 0;
+}
+.team-area .card {
+	border: none;
+	background: #ffc861;
+}
+.team-area img{
+	width: 100%;
+}
+.team-area .img-area {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-bottom: 30px;
+}
+.team-single:hover .side-two {
+	transform: rotateY(0deg);
+	border-radius: 5px;
+}
+.team-single:hover .side-one {
+	transform: rotateY(180deg);
+}
+.team-area .content-area {
+	transform: perspective(1000px);
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.team-area .side-one {
+	position: relative;
+	transform: rotateY(0deg);
+	z-index: 2;
+	margin-bottom: 30px;
+}
+.team-area .side-two {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	transform: rotateY(-180deg);
+}
+.team-area .side-one,
+.team-area .side-two {
+	backface-visibility: hidden;
+	transition: 1s;
+	transform-style: preserve-3d;
+}
+.team-area .side-one .card,
+.team-area .side-two .card {
+	min-height: 312px;	
+}
+.team-area h4 {
+	color:black;
+	font-family: bignoodletitling;
+	letter-spacing: 5px;
+	font-size: 25px;
+}
+.team-area p {
+	color: rgb(1, 1, 87);
+	margin-top: 10px;
+	font-size: 18px;
+	font-family: merienda;
+}
+
+  
+/*cards*/
+.teamm .container
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.teamm .container .card1
+{
+   width: 330px;
+   height: 416px;
+   padding: 60px 30px;
+   margin: 20px;
+   background: #f2f3f7;
+   box-shadow: 0.6em 0.6em 1.2em #d2dce9,
+               -0.5em -0.5em 1em #ffffff;
+   border-radius: 20px;
+}
+.teamm .container .card1 .content1
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.teamm .container .card1 .content1 .imgBx
+{
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   position: relative;
+   margin-bottom: 20px;
+   overflow: hidden;
+}
+.teamm .container .card1 .content1 .imgBx img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.teamm .container .card1 .content1 .contentBx h4
+{
+   color: #36187d;
+   font-size: 1.7rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 1px;
+}
+.teamm .container .card1 .content1 .contentBx h5
+{
+   color: #6c758f;
+   font-size: 1.2rem;
+   font-weight: bold;
+   text-align: center;
+}
+.teamm .container .card1 .content1 .sci
+{
+   margin-top: 20px;
+}
+.teamm .container .card1 .content1 .sci a
+{
+   text-decoration: none;
+   color: #6c758f;
+   font-size: 30px;
+   margin: 10px;
+   transition: color 0.4s;
+}
+.teamm .container .card1 .content1 .sci a:hover
+{
+   color: #0196e3;
+}
+
+/*responsive*/
+@media(max-width: 991px){
+	.team-section .team-items .item{
+      flex-basis: calc(50% - 30px);
+       max-width: calc(50% - 30px);
+
+   }
+}
+@media(max-width: 767px){
+	.team-section .team-items .item{
+      flex-basis: calc(100%);
+       max-width: calc(100%);
+
+   }
+}

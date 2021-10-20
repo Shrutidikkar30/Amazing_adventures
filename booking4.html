@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="images/fav.png">
+    <title>Book trip</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navigation1.css">
+    <link rel="stylesheet" href="css/book.css">
+    
+</head>
+<style>
+     body{
+     display: flex;
+     height: 150vh;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     background: linear-gradient(135deg, hsl(39, 94%, 48%), rgba(233, 91, 10, 0.938));
+ }
+</style>
+  
+<body> 
+  <!----navigation bar section-------> 
+  <nav>
+    <div id="topnav" class="navbar">
+       <a href="#" class="logo"><span style="color: orange"><i class="fa fa-plane" aria-hidden="true"></i>A</span>mazing Adventures
+      </a>
+      <div class="navbar-right menu">
+        <a href="index.html">
+          Home
+        </a>
+        <a href="AboutUs.html">
+          About us
+        </a>
+        <a href="services.html">
+      Services
+      </a>
+      <a href="packages.html">
+      Packages
+      </a>
+        <a href="gallery.html">
+          Gallery
+        </a>
+    <a href="booking.html" class="active">
+      Booking
+      </a>
+        <a href="contact2.html" >
+          Contact
+        </a>
+      </div>
+      <div class="navbar-right">
+        <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    </nav>
+    
+    <div class="containerform">
+        <h1>Book Your Trip Now..!</h1>
+        <div class="border"></div>
+        
+            <form action="#">
+              <div class="title">Hotel Booking</div>
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <span class="details">Check In Date</span>
+                        <input type="date" placeholder="Check In Date*" required>
+                    </div>
+        
+                    
+                    <div class="input-box">
+                        <span class="details">Check In Time</span>
+                        <input type="time" placeholder="Check In Time *" required>
+                    </div>
+                   <div class="input-box">
+                        <span class="details">Check Out Date</span>
+                        <input type="date" placeholder="Check Out Date*" required>
+                    </div>
+        
+                    
+                    <div class="input-box">
+                        <span class="details">Check Out Time</span>
+                        <input type="time" placeholder="Check Out Time *" required>
+                    </div>
+        </div>
+        <div class="gender-details">
+            <input type="radio" name="Room" id="dot-1">
+            <input type="radio" name="Room" id="dot-2">
+            <input type="radio" name="Room" id="dot-3">
+            <span class="gender-title">Room Preference</span>
+            <div class="category">
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                        <span class="gender">Standard</span>
+                    
+                </label>
+                <label for="dot-2">
+                    <span class="dot two"></span>
+                        <span class="gender">Deluxe</span>
+                    
+                </label>
+                <label for="dot-3">
+                    <span class="dot three"></span>
+                        <span class="gender">Suite</span>
+                    
+                </label>
+            </div>
+        </div> 
+        <br>
+        <br>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+              <p>100%</p>
+            </div>
+          </div> 
+        <div class="button">
+            <a href="booking3.html"><input value="Back" class="btn btn-info">&nbsp;&nbsp;
+            <input type="submit" value="Submit" class="btn btn-success">&nbsp;&nbsp;
+            <input type="reset" value="Reset" class="btn btn-danger">
+        </div>
+    </form>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+    </body>
+    </html>

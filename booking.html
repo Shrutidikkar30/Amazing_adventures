@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="images/fav.png">
+    <title>Book trip</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navigation1.css">
+    <link rel="stylesheet" href="css/book.css">
+    
+</head>
+  
+<body> 
+  <!----navigation bar section-------> 
+  <nav>
+    <div id="topnav" class="navbar">
+      <a href="#" class="logo"><span style="color: orange"><i class="fa fa-plane" aria-hidden="true"></i>A</span>mazing Adventures
+      </a>
+      <div class="navbar-right menu">
+        <a href="index.html">
+          Home
+        </a>
+        <a href="AboutUs.html">
+          About us
+        </a>
+        <a href="services.html">
+      Services
+      </a>
+      <a href="packages.html">
+      Packages
+      </a>
+        <a href="gallery.html">
+          Gallery
+        </a>
+		<a href="booking.html" class="active">
+			Booking
+		  </a>
+        <a href="contact2.html" >
+          Contact
+        </a>
+      </div>
+      <div class="navbar-right">
+        <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    </nav>
+    
+    <div class="containerform">
+        <h1>Book Your Trip Now..!</h1>
+        <div class="border"></div>
+        
+            <form method="post" autocomplete="off" name="google-sheet">
+              <div class="title">Personal Details</div>
+                <div class="user-details">
+
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" name="FirstName" placeholder="Enter Your First Name*" required>
+                    
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" name="LastName" placeholder="Enter Your Last Name*" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" name="Email" placeholder="Enter Your Email*" required>
+                </div>
+
+                
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="Phone" name="PhoneNo" placeholder="Enter Your Phone Number*" required>
+                </div>
+
+                <div class="input-box">
+                  <span class="details">Date Of birth</span>
+                  <input type="date" name="DOB"  required>
+              </div>
+              <div class="input-box">
+                <span class="details">Age</span>
+                <input type="number" name="Age" placeholder="Enter Your Age*" required>
+            </div>
+              
+              
+        </div>
+        
+        <div class="gender-details">
+            <input type="radio" name="Gender" id="dot-1">
+            <input type="radio" name="Gender" id="dot-2">
+            <input type="radio" name="Gender" id="dot-3">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    
+                </label>
+                <label for="dot-2">
+                    <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    
+                </label>
+                <label for="dot-3">
+                    <span class="dot three"></span>
+                        <span class="gender">Prefer Not to Say</span>
+                    
+                </label>
+            </div>
+        </div> 
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Aadhar Number</span>
+            <input type="number" name="AadharNo"  placeholder="Enter Your Aadhar Number'*" required>
+          </div>
+        
+        <div class="input-box">
+            <span class="details">Pan Card Number</span>
+            <input type="number" name="PanNo" placeholder="Enter Your pan card Number*" required>
+        </div>
+        </div>
+        <div class="title">Address Details</div>
+                <div class="user-details">
+
+                <div class="input-box">
+                    <span class="details">Flat No.</span>
+                    <input type="number" name="FlatNo" placeholder="Enter Flat Number*" required>
+                    
+                </div>
+
+                <div class="input-box">
+                  <span class="details">Landmark</span>
+                  <input type="text" name="Landmark" placeholder="Enter any Landmark*" required>
+              </div>
+
+                <div class="input-box">
+                    <span class="details">Area</span>
+                    <input type="text" name="Area" placeholder="Enter Area*" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">City</span>
+                    <input type="text" name="Aity" placeholder="Enter City*" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">State</span>
+                  <select name="State" style="width: 400px; height: 35px;">
+                    <option>Andhra Pradesh</option>	
+                    <option>Arunachal Pradesh</option>
+                    <option>Asom (Assam)</option>
+                    <option>Bihar</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Chhattisgarh</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jammu and Kashmir</option>
+                    <option>Jharkhand</option>
+                    <option>West Bengal</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Orissa</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttarakhand (Uttaranchal)</option>
+
+              </select>
+              </div>
+                <div class="input-box">
+                  <span class="details">Pincode</span>
+                  <input type="number" name="Pincode" placeholder="Enter Pincode*" required>
+              </div>
+
+                
+        </div>
+        <br>
+        <br>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+              <p>25%</p>
+            </div>
+          </div> 
+        <div class="button">
+            <a href="booking2.html"><input type="next" value="Next Page" class="btn btn-success"></a>&nbsp;&nbsp;
+            <input type="reset" value="Reset" class="btn btn-danger">
+        </div>
+    </form>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwTAbmtS5KpQ6gLNhOj_Qx1iFtcwRwKxkcxcbcnOnyl3MQfQ24p-6J8DRISmxSTnk75/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('next', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+    </body>
+    </html>

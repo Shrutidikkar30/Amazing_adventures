@@ -1,0 +1,101 @@
+:root {
+	--red: orange;
+	--white: #ffffff;
+	--black: #000000;
+}
+nav{
+	background-color:black;
+}
+.navbar {
+	background-color:black;
+	padding: 9px 9px;
+	padding-right: 20px;
+	padding-left: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 1566px;
+	z-index: 99;
+}
+
+.navbar a {
+	float: left;
+	color: var(--white);
+	text-align: center;
+	text-decoration: none;
+	font-size: 19px;
+	line-height: 25px;
+	padding: 13px;
+}
+.fa-home
+{
+	font-size: 40px;
+}
+.navbar .logo {
+	margin-top: -12px;
+	font-size: 30px;
+	font-weight: bold;
+	margin-right: 160px;
+	margin-left: 120px;
+	color: white;
+}
+
+.navbar-right a:hover {
+	color: var(--red);
+}
+
+.navbar-right a.active {
+	color: var(--red);
+}
+
+.navbar-right a {
+	transition: color 0.5s ease;
+}
+
+.navbar-right {
+	align-items: center;
+}
+
+.navbar .icon {
+	font-size: 25px;
+	display: none;
+}
+
+
+@media screen and (max-width: 1300px) {
+	.navbar {
+		padding: 10px;
+	}
+	
+	.navbar .menu {
+		display: none;
+	}
+
+	.navbar .icon {
+		display: block;
+		position: absolute;
+		top: 12px;
+		right: 13px;
+	}
+	.navbar .logo {
+	margin-left:-15px;
+	margin-right:0px;
+	}
+
+	.navbar.show {
+		background: var(--black);
+	}
+
+	.navbar.show .menu {
+		display: block;
+		width: 100%;
+	}
+
+	.navbar.show .menu a {
+		width: 100%;
+	}
+
+
+}
